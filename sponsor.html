@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Sponsors</title>
+<link href="Master.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="container">
+        <div id="header">
+        APU Basketball Club
+        </div>
+		<div class="nav">
+			<ul>
+				<li><a href="homepage.html">HOME</a>
+					<ul>
+					<li><a href="blogpost.html">BLOG POST</a></li>
+					<li><a href="sponsor.html">SPONSOR</a></li>
+					<li><a href="joinus.html">JOIN US</a></li>
+					</ul>
+				</li>
+				<li><a href="aboutus.html">ABOUT US</a>
+					<ul>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="executives.html">EXECUTIVES</a></li>
+					<li><a href="achievements.html">ACHIEVEMENTS</a></li>
+					</ul>
+				</li>
+					<li><a href="timetable.html">TIMETABLE</a>
+					<ul>
+					<li><a href="clubschedule.html">CLUB SCHEDULES</a></li>
+					<li><a href="skilltraining.html">SKILL TRAINING</a></li>
+					<li><a href="strategytraining.html">STRATEGY TRAINING</a></li>
+					</ul>
+				</li>
+					<li><a href="Event.html">EVENT</a>
+					<ul>
+					<li><a href="UpcomingCompetition.html">UPCOMING COMPETITION</a></li>
+					<li><a href="LatestResults.html">LATEST RESULTS</a></li>
+					<li><a href="EventGallery.html">EVENT GALLERY</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="content-area">
+			<h2><script language="JavaScript1.2">
+
+var message="Welcome to Our Sponsors Page!!"
+var neonbasecolor="black"
+var neontextcolor="yellow"
+var neontextcolor2="#FFFFA8"
+var flashspeed=100						
+var flashingletters=3						
+var flashingletters2=1						
+var flashpause=0			
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+</script></h2>
+		
+
+		
+		
+		
+		
+		Here are our Sponsors
+		<div class="rowdisplay">
+		<iframe class= style= "margin:10px 15px;border:1px solid black;background:white" src="https://www.nike.com/my/" width="400" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<h2>Nike</h2>
+		</div>
+		</div>
+	    <br></br>
+	    <div class="rowdisplay">
+		<iframe class= style= "margin:10px 15px;border:1px solid black;background:white" src="https://www.molten.co.jp/sports/en/index.html"> width="400" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<h2>Molten</h2>
+		</div>
+		</div>
+	    <br></br>
+	    <div class="rowdisplay">
+		<iframe class= style= "margin:10px 15px;border:1px solid black;background:white" src="https://www.starbucks.com.my/"> width="400" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<h2>Starbucks</h2>
+		</div>
+		</div>
+	    <br></br>
+
+
+
+
+
+		</div>
+		<div id="footer">
+		Created by Group 3<br/>
+		FDD Assignment
+		</div>
+</div>
+</body>
+
+</html>
